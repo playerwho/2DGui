@@ -1,7 +1,7 @@
 package gui.view;
 
 import gui.controller.GuiAppController;
-import javax.swing.JFrame;
+import javax.swing.*;
 
 public class GuiFrame extends JFrame
 {
@@ -15,9 +15,14 @@ public class GuiFrame extends JFrame
 
 	private void setupFrame()
 	{
-		this.setSize(500,500);
+		//Optional
+		this.setSize(600,600);
+		
+		//required
 		this.setContentPane(appPanel);
+		//Required
 		this.setVisible(true);
+		
 		
 	}
 }
